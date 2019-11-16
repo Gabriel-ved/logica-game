@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Consolas;
+}
+.body{
+    background-color: lightslategray;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.titulo{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+    font-size: 60px;
+}
+.jogar{
+    border-radius: 25px;
+    border-style: none;
+    padding: 15px 50px;
+    font-size: 25px;
+    background-color: whitesmoke;
+    color:slateblue;
+    box-shadow: 1px 2px 3px black;
+    position: relative;
+    top:-50px;
+}
+.true{
+    margin: 10px;
+    background-color: green;
+    color:white
+}
+.false{
+    margin: 10px;
+    background-color: red;
+    color:white;
+}
+.jogo h2 ,.operacao{
+    font-size: 50px;
+}
+.jogo{
+    display: flex;
+    flex-direction: 'row';
+    align-items: center;
+}
+.box{
+    width: 70px;
+    height: 70px;
+    background-color:  aliceblue;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dica{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.sairDica{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    border: none;
+    background-color: red;
+    padding:5px 8px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pontuacao{
+    position:absolute;
+    left:5px;
+    top:5px;
+    width:100px;
+    height:100px;
+    background-color:white;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight: bold;
+}
