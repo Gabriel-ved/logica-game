@@ -1,13 +1,12 @@
 import React,{useEffect,useState} from 'react';
 
-export default function Nivel1({setNivel,setPontuacao}) {
+export default function Nivel2({setNivel,setPontuacao}) {
   const [erro,setErro]=useState(false)
   const[resposta,setResposta]=useState();
 
-
   useEffect(()=>{
     if(resposta == 'verdade'){
-      setNivel(2)//Passar para proximo nivel
+      setNivel(3)//Passar para proximo nivel
       setPontuacao(10,'+')//Quantos pontos ele vai ganhar
     }
     if(resposta == 'falso'){
@@ -17,7 +16,7 @@ export default function Nivel1({setNivel,setPontuacao}) {
   },[resposta])
 
   function proximaFase(){
-    setNivel(2)
+    setNivel(3)
   }
   function verdadeiro(){
     setResposta('verdade')
@@ -26,12 +25,11 @@ export default function Nivel1({setNivel,setPontuacao}) {
     setResposta('falso')
   }
 
-
   return (
     <>
         
       <h2>
-        Se maria foi para a escola, então carlos foi trabalhar{/* Titudo ou questão */}
+        {/* Titudo ou questão */} 
       </h2>
       <div className='jogo'>
         {!erro?  

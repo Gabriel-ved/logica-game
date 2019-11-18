@@ -48,10 +48,8 @@
     align-items: center;
 }
 .box{
-    width: 70px;
-    height: 70px;
     background-color:  aliceblue;
-    padding: 20px;
+    padding:30px 50px;
     border-radius: 20px;
     margin: 30px;
     display: flex;
@@ -85,8 +83,7 @@
     position:absolute;
     left:5px;
     top:5px;
-    width:100px;
-    height:100px;
+    padding: 30px 30px;
     background-color:white;
     border-radius:20px;
     display:flex;
