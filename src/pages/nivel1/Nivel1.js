@@ -29,44 +29,49 @@ export default function Nivel1({setNivel,setPontuacao}) {
 
   return (
     <>
-        
-      <h2>
-        Se maria foi para a escola, então carlos foi trabalhar{/* Titudo ou questão */}
-      </h2>
-      <div className='jogo'>
         {!erro?  
         <>
-          <div className='box'>
-            <h2>
-              V
-            </h2>
+          <h2>
+            Maria foi para a escola e Carlos não foi trabalhar{/* Titudo ou questão */}
+          </h2>
+
+          <div className='jogo'>
+            <div className='box'>
+              <h2>
+                V
+              </h2>
+            </div>
+            <div className='operacao'>
+              ^
+            </div>
+            <div className='box'>
+              <h2>
+                F
+              </h2>
+            </div>
           </div>
-          <div className='operacao'>
-            ->
+
+          <div>
+            <button onClick={falso} className='jogar false'>
+              Falso
+            </button>
+            <button onClick={verdadeiro} className='jogar true'>
+              Verdadeiro
+            </button>
           </div>
-          <div className='box'>
-            <h2>
-              F
-            </h2>
-          </div>
+
         </>
         :
+
         <div className='box' style={{flexDirection:'column'}}>
-          <h2>Explicação</h2>{/* Explicação se o cara errar */}
+          <h2>
+            O conectivo "e", representado pelo símbolo “^” junta proposições as quais somente resultarão em Verdadeiro se todos os valores forem Verdadeiros.
+          </h2>{/* Explicação se o cara errar */}
           <button className='jogar' onClick={proximaFase} style={{top:0,margin:10,backgroundColor:'#7fa',color:'#000'}}>
             proxima
           </button>
         </div>
         }
-      </div>
-      <div>
-        <button onClick={falso} className='jogar false'>
-          Falso
-        </button>
-        <button onClick={verdadeiro} className='jogar true'>
-          Verdadeiro
-        </button>
-      </div>
     </>
   );
 }
