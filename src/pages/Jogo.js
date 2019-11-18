@@ -3,7 +3,7 @@ import Dica from '../assets/dica.png'
 
 import Nivel1 from './nivel1/Nivel1'
 import Nivel2 from './nivel1/Nivel2'
-// import Nivel3 from './nivel1/Nivel3'
+import Nivel3 from './nivel1/Nivel3'
 // import Nivel4 from './nivel1/Nivel4'
 // import Nivel5 from './nivel1/Nivel5'
 // import Nivel6 from './nivel1/Nivel6'
@@ -33,27 +33,27 @@ export default function Jogo() {
 
   return (
     <div className='body'>
-    <div className='dica'>
-    <button onClick={handleDica} className='sairDica'>{dica}</button>
-      {dica === 'Dica'?null:<img src={Dica} alt='dica' />}
-    </div>
-    <div className='pontuacao'>
-      <h3>
-       {pontuacao} pontos
-      </h3>
-    </div>
-      {nivel === 1 ?<Nivel1 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
-      {nivel === 2 ?<Nivel2 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
-      {/* {nivel === 3 ?<Nivel3 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
-      {nivel === 4 ?<Nivel4 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
-      {nivel === 5 ?<Nivel5 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
-      {nivel === 6 ?<Nivel6 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
-      {nivel === 7 ?<Nivel7 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
-      {nivel === 8 ?<Nivel8 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
-      {nivel === 9 ?<Nivel9 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
-      {nivel === 10 ?<Nivel10 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
-      {nivel === 11 ?<Nivel11 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
-      {nivel === 12 ?<Nivel12 setNivel={setNivel} setPontuacao={handlePontuacao} />:null} */}
+      <div className='dica'>
+        <button onClick={handleDica} className='sairDica'>{dica}</button>
+        {dica === 'Dica'?null:<img src={Dica} alt='dica' />}
+      </div>
+      <div className='pontuacao'>
+        <h3>
+        {pontuacao} pontos
+        </h3>
+      </div>
+        {nivel === 1 ?<Nivel1 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
+        {nivel === 2 ?<Nivel2 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
+        {nivel === 3 ?<Nivel3 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
+        {/* {nivel === 4 ?<Nivel4 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
+        {nivel === 5 ?<Nivel5 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
+        {nivel === 6 ?<Nivel6 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
+        {nivel === 7 ?<Nivel7 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
+        {nivel === 8 ?<Nivel8 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
+        {nivel === 9 ?<Nivel9 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
+        {nivel === 10 ?<Nivel10 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
+        {nivel === 11 ?<Nivel11 setNivel={setNivel} setPontuacao={handlePontuacao} />:null}
+        {nivel === 12 ?<Nivel12 setNivel={setNivel} setPontuacao={handlePontuacao} />:null} */}
   </div>
   );
 }

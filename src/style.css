@@ -11,6 +11,10 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+}
+.body > h2{
+    margin: 0 80px;
 }
 .titulo{
     font-family: 'ZCOOL KuaiLe', cursive;
@@ -82,7 +86,7 @@
 .pontuacao{
     position:absolute;
     left:5px;
-    top:5px;
+    bottom: 5px;
     padding: 30px 30px;
     background-color:white;
     border-radius:20px;
